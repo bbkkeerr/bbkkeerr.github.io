@@ -1,0 +1,82 @@
+body{background-color: #EAEAEA;}
+html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;onselectstart:none}
+#title{
+	transition: all 1s;
+    -webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	transform-origin:left top;
+	background-color: #252a34;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+#title:hover{
+	background-color: #ff2e63;
+	border-radius: 30px;
+}
+#titlediv{
+	transform-origin:left top;
+	transition: transform 0.5s cubic-bezier(.8,-.5,.2,1.4);
+	transform: scale(1.0,1.0);
+}
+#titlediv:hover{
+	transform: scale(1.13,1.0);
+}
+#menu ul{
+	border-radius: 5px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	overflow:hidden;
+	background:#252a34;
+}
+#menu,#menu li{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+#menu li{
+	float: left;
+}
+#menu li a {
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	font-family: microsoft yahei;
+	font-size: 20px;
+	width: 100px;
+	line-height:30px;
+	text-align: center;
+	display:block;
+	padding:8px 30px;
+	background:#5b5656;
+	color:#eaeaea;
+	text-decoration: none;
+	border-right:0;
+}
+#menu li a:hover {
+	font-family:"microsoft yahei";
+	font-size: 20px;
+	display: block;
+	padding:8px 30px;
+	background:#eb0046;
+	color:#fff;
+	text-decoration:none;
+}
+#menu li a: {
+	font-family:"microsoft yahei";
+	font-size: 20px;
+	display: block;
+	padding:8px 30px;
+	background:#eb0046;
+	color:#fff;
+	text-decoration:none;
+}
+.text {  
+    display: inline-block;
+    font-family: '微软雅黑';
+    background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(#ffffff), to(#cacaca));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.circle{box-shadow: 0px 5px 10px rgba(0,0,0,0.5);margin: 10px;float: left;transition: all 0.5s;transform: scale(1.0,1.0);text-align: center;font-size: 60px;color: white;width: 80px;height: 80px;background-color:#252A34;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;}
+.circle:hover{transform: scale(1.1,1.1);text-align: center;font-size: 60px;color: white;width: 80px;height: 80px;background-color:#EB0046;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;}
