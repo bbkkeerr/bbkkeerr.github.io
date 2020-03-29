@@ -78,6 +78,14 @@ html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;on
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#listdiv{
+	background-color: #5B5656;
+	margin-left: 20%;
+	margin-right: 20%;
+	border-radius: 10px;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	color: white;
+}
 #list a{
 	border:2px solid #FF2E63;
 	transition: all 0.6s cubic-bezier(.8,-.5,.2,1.4);
@@ -85,14 +93,15 @@ html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;on
 	width: auto;
 	text-decoration: none;
 	color: aliceblue;
-	background-color: #424b5d;
+	background-color: #252A34;
 	line-height: 3rem;
-	border-radius: 10px;
+	border-radius: 25px;
 	padding-left: 10px;
 	padding-right: 10px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+	z-index: 0;
 }
 #list a:hover{
 	border:2px solid #FF2E63;
@@ -105,5 +114,26 @@ html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;on
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+
+
+#maskbg{
+	transition: all 1s;
+	filter: blur(0px);
+	transform: skewY(-10deg);
+	overflow: hidden;
+	-webkit-mask-size: 0%;
+	-webkit-mask-position-x: 10%;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-image: url(../logo.png);
+}
+#maskbg:hover{
+	filter: blur(10px);
+	transform: skewY(0deg);
+	-webkit-mask-size: 30%;
+	-webkit-mask-position-x: 50%;
+	-webkit-mask-repeat: no-repeat;
+	-webkit-mask-image: url(../logo.png);
+}
+
 .circle{box-shadow: 0px 5px 10px rgba(0,0,0,0.5);margin: 10px;float: left;transition: all 0.5s;transform: scale(1.0,1.0);text-align: center;font-size: 60px;color: white;width: 80px;height: 80px;background-color:#252A34;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;}
 .circle:hover{transform: scale(1.1,1.1);text-align: center;font-size: 60px;color: white;width: 80px;height: 80px;background-color:#EB0046;border-radius: 50%;-moz-border-radius: 50%;-webkit-border-radius: 50%;}
