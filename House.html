@@ -58,6 +58,10 @@
 		<script src="js/getid.js"></script>
 		<script>
 			eval("$(function(){$(\"."+id+"\").show();});");
+			
+			$(function(){
+				$("iframe:hidden").remove();
+			});
 		</script>
 	</body>
 </html>
