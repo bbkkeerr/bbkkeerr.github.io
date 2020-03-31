@@ -147,6 +147,14 @@ html,body{-moz-user-select: none; -khtml-user-select: none; user-select: none;on
 	-webkit-mask-image: url(../logo.png);
 }
 
+.GenreLink{
+	text-decoration: none;
+	color: #F0F8FF;
+	padding: 5px;
+	border-radius: 10rem;
+	background-color: #FF2E63;
+}
+
 #mail{
 	text-decoration: none;
 	color: #F0F8FF;
